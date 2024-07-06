@@ -1,10 +1,11 @@
 <x-guest-layout>
     <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
+
     <div class="p-6 sm:p-5 lg:p-10 space-y-5">
-        <h2 class="text-2xl lg:text-3xl text-center font-bold text-gray-900">
+        <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
             Connectez-vous
         </h2>
+        <x-auth-session-status class="mb-4" :status="session('status')" />
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
@@ -30,20 +31,20 @@
             <!-- Remember Me -->
             <div class="block mt-4">
                 <label for="remember_me" class="inline-flex items-center">
-                    <input id="remember_me" type="checkbox" class="bg-gray-50 border-gray-300 text-cyan-600 focus:ring-3 focus:ring-cyan-200 h-4 w-4 rounded" name="remember">
+                    <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
                     <span class="ms-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
                 </label>
             </div>
 
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
-                    <a class="text-sm text-cyan-500 hover:underline ml-auto" href="{{ route('password.request') }}">
-                        {{ __('Mot de passe oublié?') }}
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
+                        {{ __('Forgot your password?') }}
                     </a>
                 @endif
 
                 <x-secondary-button class="ms-3">
-                    {{ __('Connexion') }}
+                    {{ __('Log in') }}
                 </x-secondary-button>
             </div>
         </form>

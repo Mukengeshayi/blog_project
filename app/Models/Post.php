@@ -37,5 +37,9 @@ class Post extends Model
     {
         return $this->hasMany(Like::class);
     }
-
-}
+    public function validComments()
+    {
+        return $this->comments()->whereHas('user', function ($query) {
+              $query->whereValid(true);
+    });
+}}
