@@ -18,7 +18,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class=" font-sans hold-transition sidebar-mini layout-fixed">
-        <div class="min-h-screen bg-gray-100">
+        <div class="bg-gray-100 wrapper">
             @include('layouts.navigation')
             @include('layouts.sidebar')
             <!-- Page Heading -->
@@ -34,6 +34,8 @@
             <main>
                 {{ $slot }}
             </main>
+
+            <!-- footer Content -->
             <footer class="main-footer">
                 <strong>Copyright &copy; @php
                     date('Y')
@@ -43,6 +45,8 @@
                     <b>Version</b> 1.0.0
                 </div>
             </footer>
+            <aside class="control-sidebar control-sidebar-dark">
+            </aside>
         </div>
     <script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>

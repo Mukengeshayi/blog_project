@@ -22,30 +22,6 @@
               <p>Categories</p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-warning"></i>
-              <p class="text">Sous-categorie</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-warning"></i>
-              <p>Marques</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
-              <p>Utilisateurs</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-circle text-info"></i>
-              <p>Pages</p>
-            </a>
-          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
