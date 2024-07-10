@@ -44,7 +44,7 @@
                 @endif
 
                 <x-secondary-button class="ms-3">
-                    {{ __('Log in') }}
+                    {{ __('Connexion') }}
                 </x-secondary-button>
             </div>
         </form>

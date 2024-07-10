@@ -34,19 +34,15 @@
             <main>
                 {{ $slot }}
             </main>
-
-            <!-- footer Content -->
             <footer class="main-footer">
-                <strong>Copyright &copy; @php
+                <div class="float-right d-none d-sm-block">
+                    <b>Version</b> 3.0.5
+                  </div>
+                <strong> &copy; @php
                     date('Y')
-                @endphp  <a href="http://adminlte.io">DesiTech.io</a>.</strong>
-                All rights reserved.
-                <div class="float-right d-none d-sm-inline-block">
-                    <b>Version</b> 1.0.0
-                </div>
-            </footer>
-            <aside class="control-sidebar control-sidebar-dark">
-            </aside>
+                @endphp <a href="https://adminlte.io" target="_blank">AdminLTE.io</a></strong>
+                All rights reseved. by <a href="https://skytech243.com">Desitech</a>
+              </footer>
         </div>
     <script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
